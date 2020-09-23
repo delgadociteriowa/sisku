@@ -1,0 +1,46 @@
+.siskuLogin{
+	background: linear-gradient(90deg, $orangeOne, $orangeTwo 100%);
+	.loginBox{
+		font-family: $fontParagraphs;
+		padding-top: 200px;
+		padding-bottom: 310px;
+		.card{
+			border-radius: 0px;
+		}
+		.bg-login-image{
+			background: url(../img/login-girl.jpg);
+		}
+		.login-form{
+			background-color: $bgColor;
+		}
+		h3{
+			font-family: $fontTitles;
+			color: $orangeOne;
+			margin-bottom: 30px;
+		}
+		.btn-user{
+			background-color: $orangeOne;
+			border: 0px;
+			font-size: 1.25rem;
+			font-family: $fontTitles;
+			color: $bgColor;
+		}
+		.btn-user:hover{
+			background-color: $orangeOneHover;
+		}
+		a.small{
+			color: $orangeOne;
+		}
+		a.small:hover{
+			color: $orangeOneHover;
+		}
+		.errorMessage{
+		    color: $errorColor;
+		    font-weight: bold;
+		    text-align: center;
+		    display: block;
+		    margin-top: 15px;
+		    visibility: hidden;
+		}
+	}
+}

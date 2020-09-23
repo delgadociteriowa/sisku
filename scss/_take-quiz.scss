@@ -1,0 +1,51 @@
+.take-quiz-title{
+	color: $paragraphColor;
+	font-family: $fontTitles;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.take-quiz-question{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	div{
+		border: 1px solid $orangeOne;
+	}
+	.number{
+		background-color: $orangeOne;
+		color: #fff;
+		font-size: 2rem;
+		font-family: $fontTitles;
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.question-text{
+		font-family: $fontTitles;
+		text-align: center;
+	    font-size: 1.5rem;
+	    padding-top: 35px;
+	    color: $paragraphColor;
+	}
+	.option{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: center;
+		font-size: 1.25rem;
+		font-family: $fontParagraphs;
+		.letter{
+			font-weight: bold;
+			color: $orangeOne;
+			float: left;
+		}
+	}
+	.selector{
+		background-color: $orangeOne;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		input[type=radio]{
+			border: 0px;
+    		width: 100%;
+			height: 1.25rem;
+		}
+	}
+}

@@ -1,0 +1,93 @@
+header{
+	.colorBar{
+		box-sizing: content-box;
+	    width: 100%;
+	    height: 1000px;
+	    position: absolute;
+	    top: -12em;
+	    left: 0;
+	    overflow: hidden;
+	    text-overflow: clip;
+	    background: linear-gradient(90deg, $orangeOne, $orangeTwo 100%);
+	    background-position: 50% 50%;
+	    background-origin: padding-box;
+	    -webkit-background-clip: border-box;
+	    background-clip: border-box;
+	    background-size: auto auto;
+	    -webkit-transform: skewY(-10deg);
+	    transform: skewY(-8deg);
+	    -webkit-transform-origin: 0 100% 0deg;
+	    transform-origin: 0 100% 0deg;
+	}
+	.container{
+		.description{
+			padding-top: 120px;
+			h1{
+				color: $bgColor;
+				font-family: $fontTitles;
+			}
+		}
+		.image{
+			img{
+				margin: 0 auto;
+				display: block;
+				width: 180px;
+				margin-top: 60px;
+			}
+			a{
+				text-align: center;
+			    border-radius: 50px;
+			    border: 2px solid $bgColor;
+			    color: #fff;
+			    font-family: $fontTitles;
+			    display: block;
+			    width: 80%;
+			    margin: 0 auto;
+			    padding: 20px;
+			    font-size: 2rem;
+			    margin-top: 60px;
+			}
+			a:hover{
+				text-decoration: none;
+				color: $orangeTwo;
+				background-color: $bgColor;
+			}
+		}
+	}
+}
+
+/*Tablet*/
+@media only screen and (max-width: 800px) {
+	header{
+		.colorBar{
+			height: 1200px;
+		}
+		.container{
+			.description{
+				padding-top: 60px;
+				h1{
+					text-align: center;
+				}
+			}
+			.image{
+				a{
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+
+/*Mobile*/
+@media only screen and (max-width: 450px) {
+	header{
+		.colorBar{
+			height: 1250px;
+		}
+		.container{
+			.description{
+				padding-top: 30px;
+			}
+		}
+	}
+}

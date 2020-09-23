@@ -1,0 +1,36 @@
+.my-profile-picture{
+	width: 80%;
+	display: block;
+	margin: 0 30px;
+	border-radius: 150px;
+}
+.profile-stats{
+	border: 0px;
+	li{
+		border: 0px;
+		font-weight: bold;
+		span{
+			color: $orangeOne;
+		}
+	}
+}
+
+#siskuUpdateProfile{
+	.myProfileDisplay{
+		font-weight: bold;
+		color: $orangeTwoSoftTwo;
+		font-size: 1.5rem;
+	}
+	.siskuEditProfile, .siskuCancelEdit{
+		color: $orangeOne;
+		font-size: .75rem;
+	}
+	.siskuEditProfile:hover, .siskuCancelEdit:hover{
+		color: $orangeOneHover;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.siskuCancelEdit{
+		float: right;
+	}
+}

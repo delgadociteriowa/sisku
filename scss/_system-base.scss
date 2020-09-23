@@ -1,0 +1,179 @@
+.system-base{
+	#accordionSidebar{
+		background: linear-gradient(90deg, $orangeOne, $orangeOneHover 100%);
+	}
+	.sidebar-brand-text{
+		font-family: $fontTitle;
+		font-size: 2rem;
+		margin-left: 10px;
+		margin-top: 5px;
+	}
+	.navbar-nav{
+		.sidebar-brand-icon{
+			img{
+				height: 40px;
+			}
+		}
+		li{
+			a{
+				span{
+					font-family: $fontParagraphs;
+				}
+			}
+		}
+	}
+	#content-wrapper{
+		#content{
+			background-color: $bgColor;
+		}
+		.navbar-nav{
+			.profile-name{
+				color: $paragraphColor;
+				font-family: $fontParagraphs;
+			}
+			.dropdown-menu{
+				a{
+					color: $paragraphColor;
+					font-family: $fontParagraphs;
+					i:before{
+						color: $orangeOne;
+					}	
+				}
+			}
+		}
+		footer{
+			span{
+				font-family: $fontParagraphs;
+				color: $paragraphColor;
+				a{
+					color: $orangeOne;
+				}
+				a:hover{
+					color: $orangeOneHover;
+				}
+			}
+		}
+	}
+	.sisku-content{
+		background-color: $bgColor;
+		.sectionTitle{
+			font-family: $fontTitles;
+			color: $orangeTwoSoftTwo;
+			margin-left: 10px;
+		}
+		.card{
+			border-radius: 0px;
+			font-family: $fontParagraphs;
+			color: $paragraphColor;
+			.custom-select{
+				border-radius: 0px;
+				border-color: $orangeOneSoft;
+			}
+			.form-control{
+				border-radius: 0px;
+				border-color: $orangeOneSoft;				
+			}
+			.custom-select:focus{
+				box-shadow: none;
+			}
+			.form-control:focus{
+				box-shadow: none;
+			}
+			.paginate_button{
+				a{
+					border-color: $orangeOneSoft;
+					color: $orangeOneSoft;
+				}
+				a:hover{
+					background-color: $bgColor;
+				}
+				a:focus{
+					box-shadow: none !important;	
+				}
+			}
+			.paginate_button.previous{
+				a{
+					border-radius: 20px 0px 0px 20px;
+				}
+			}
+			.paginate_button.next{
+				a{
+					border-radius: 0px 20px 20px 0px;
+				}
+			}
+			.paginate_button.disabled{
+				a{
+					color: $titleSectionColor;
+				}
+			}
+			.paginate_button.active{
+				a{
+					background-color: $orangeOne;
+					color: #fff;
+				}
+				a:hover{
+					background-color: $orangeOneHover;
+				}
+			}
+			#dataTable{
+				border-color: $orangeOne;
+				thead{
+					border-color: $orangeOne;
+					tr{
+						th{
+							padding-top: 20px;
+							padding-bottom: 20px;
+							border-color: $orangeOne;
+							background-color: $orangeOne;
+							color: #fff;
+							font-weight: 300; 
+						}
+						.courseName{
+							width: 50%;
+						}
+						.noSort::before{
+							display:none
+						}
+						.noSort::after{
+							display:none
+						}	
+					}
+				}
+				tbody{
+					tr{
+						td{
+							padding-top: 20px;
+							padding-bottom: 20px;
+							color: $paragraphColor;
+						}
+						.editDelete{
+							text-align: center;
+							i{
+								margin-left: 10px;
+								margin-right: 10px;
+								font-size: 1.25rem;
+								color: $orangeOne;
+							}
+							i:hover{
+								color: $orangeOneHover;	
+							}
+						}
+						.startButton{
+							text-align: center;
+							.btn{
+								border-radius: 20px;
+								border: 0px;
+								background-color: $orangeOne;
+								margin-top: -5px;
+								margin-bottom: -5px;
+							}
+							.btn:hover{
+								background-color: $orangeOneHover;
+							}
+						}	
+					}
+				}
+			}
+		}
+	}
+}

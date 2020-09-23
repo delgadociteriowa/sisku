@@ -1,0 +1,104 @@
+.navbar{
+	h1{
+		font-family: $fontTitle;
+		font-size: 4rem;
+		color: $bgColor;
+		margin-bottom: 0px;
+    	margin-top: .5rem;
+	}
+	h2{
+		font-family: $fontTitles;
+		color: $bgColor;
+	}
+	#navbarResponsive{
+		li{
+			a{
+				font-family: $fontTitles;
+				color: $bgColor;
+				font-size: 1.25rem;
+			}
+			a:hover{
+				color: $bgColorHover;
+			}
+			a.login{
+			    border-radius: 20px;
+    			border: 2px solid $bgColor;
+    			color: $bgColor;
+    			padding: 5px 15px 5px 15px;
+   				margin-left: 10px;
+			}
+			a.login:hover{
+    			color: $orangeTwo;
+    			background-color: $bgColor;
+			}
+		}
+	}
+}
+.navbar-scrolled{
+	background-color: $bgColor;
+	border-bottom: 1px solid $orangeTwo;
+	h1{
+		color: $orangeOne;
+	}
+	h2{
+		color: $titleColor;
+	}
+	i.fa-check-circle{
+		color: $orangeOne;
+	}
+	#navbarResponsive{
+		li{
+			a{
+				color: $titleColor;
+			}
+			a:hover{
+				color: $orangeOne;
+			}
+			a.login{
+    			border: 2px solid $orangeOne;
+    			color: $orangeOne;
+			}
+			a.login:hover{
+    			color: $bgColor;
+    			background-color: $orangeOne;
+			}
+		}
+	}
+}
+
+/*Tablet*/
+@media only screen and (max-width: 800px) {
+	.navbar{
+		#navbarResponsive{
+			li{
+				a.login{
+	   				margin: 5px 0px 15px 0px;
+	   				width: 15%;
+	   				text-align: center;
+				}
+			}
+		}
+	}
+}
+
+/*Mobile*/
+@media only screen and (max-width: 450px) {
+	.navbar{
+		h2{
+			font-size: 1.25rem;
+		}
+		#navbarResponsive{
+			li{
+				a.login{
+	   				display: block;
+	   				margin: 0 auto;
+	   				text-align: center;
+	   				margin-left: 0px;
+	   				margin-top: 15px;
+	   				margin-bottom: 15px;
+	   				width: 100%;
+				}
+			}
+		}
+	}
+}

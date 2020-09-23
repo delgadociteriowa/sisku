@@ -1,0 +1,68 @@
+.create-edit-quiz{
+	.card-create{
+		border-color: $orangeOne;
+		.card-header{
+			color: #fff;
+			background-color: $orangeOne;
+			border-radius: 0px;
+		}
+	}
+	.card-create.question{
+		border-color: $orangeTwoSoft;
+		padding-bottom: 30px;
+		.form-control{
+			border-color: $orangeTwoSoft;
+		}
+		.card-header{
+			background-color: $orangeTwoSoft;
+			i.fa-trash-alt{
+				float: right;
+				cursor: pointer;
+			}
+		}
+	}
+	.addQuestion{
+		border-radius: 20px;
+		background-color: $orangeOne;
+		border-color: $orangeOne;
+		float: right;
+		margin-right: 130px;
+	}
+	.addQuestion:hover{
+		background-color: $orangeOneHover;
+		border-color: $orangeOneHover;
+	}
+	.explanation{
+		font-weight: bold;
+		margin-top: 30px;
+	}
+	.answer-option{
+		text-align: center;
+		width: 100%;
+		.form-check-input{
+			margin-top: 30px;
+			margin-left: -30px;
+		}
+	}
+	.sendButtons{
+		input.btn{
+			border-radius: 20px;
+			border-color: $orangeOne;
+			background-color: $orangeOne;
+			color:#fff;
+		}
+		input.btn:hover{
+			border-color: $orangeOneHover;
+			background-color: $orangeOneHover;
+			color:$bgColor;
+		}
+		input.btn.cancel{
+			border-color: $orangeTwoSoft;
+			background-color: $orangeTwoSoft;
+		}
+		input.btn.cancel:hover{
+			border-color: $orangeTwo;
+			background-color: $orangeTwo;
+		}
+	}
+}

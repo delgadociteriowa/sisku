@@ -1,0 +1,13 @@
+body{
+	background-color: $bgColor;
+	.sisku-btn{
+		border-color: $orangeOne;
+		background-color: $orangeOne;
+		color: #fff;
+		border-radius: 20px;
+	}
+	.sisku-btn:hover{
+		border-color: $orangeOneHover;
+		background-color: $orangeOneHover;
+	}
+}
